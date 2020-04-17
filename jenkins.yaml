@@ -1,5 +1,5 @@
 jenkins:
-  systemMessage: "AutomatingGuy2 demo: configured automatically with JCasC plugin\n\n"
+  systemMessage: "AutomatingGuy3 demo: configured automatically with JCasC plugin\n\n"
 tool:
   git:
     installations:
@@ -29,6 +29,16 @@ jobs:
               }
           }
       }
+
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - usernamePassword:
+          id: "a8ee1ede-5a52-4b53-bb6b-02e4b5e97cd2"
+          password: "{AQAAABAAAAAQ1vUEl/e6Hv8QriBTa5a72kj/yw0acPamEU3IuW2oSjI=}"
+          scope: GLOBAL
+          username: "albertnoble"
 # plugins:
 #   required:
 #     blueocean: latest
